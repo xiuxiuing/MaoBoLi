@@ -1,0 +1,49 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#define RGB(r,g,b,a)                                    [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:a]
+
+#pragma mark - background color
+//样色集合
+#define BACKGROUNDCOLOR_BLUE                            RGB(85,165,214,1.0)
+#define BACKGROUNDCOLOR_RED                             RGB(208,2,27,1.0)
+#define BACKGROUNDCOLOR_BLACK                           RGB(19,37,48,1.0)
+#define BACKGROUNDCOLOR_LIGHTBLACK                      RGB(0,0,0,0.5)
+#define BACKGROUNDCOLOR_WHITE                           RGB(255,255,255,1.0)
+#define BACKGROUNDCOLOR_DRAKWHITE                       RGB(250,250,250,1.0)
+#define BACKGROUNDCOLOR_GRAYWHITE                       RGB(245,245,245,1.0)
+#define BACKGROUNDCOLOR_LIGHTWHITE                      RGB(231,231,231,1.0)
+
+
+#pragma mark - font color
+//样色集合
+#define FONTCOLOR_BLUE                                  RGB(85,165,214,1.0)
+#define FONTCOLOR_RED                                   RGB(208,2,27,1.0)
+#define FONTCOLOR_BLACKONE                              RGB(0,0,0,1.0)
+#define FONTCOLOR_BLACKTWO                              RGB(44,44,44,1.0)
+#define FONTCOLOR_BLACKTHREE                            RGB(51,51,51,1.0)
+#define FONTCOLOR_BLACKFOUR                             RGB(102,102,102,1.0)
+#define FONTCOLOR_BLACKFIVE                             RGB(153,153,153,1.0)
+#define FONTCOLOR_BLACKSIX                              RGB(204,204,204,1.0)
+#define FONTCOLOR_BLACKSEVEN                             RGB(222,222,222,1.0)
+
+#define FONTCOLOR_WHITE                                 RGB(255,255,255,1.0)
+#define FONTCOLOR_DRAKWHITE                             RGB(255,255,255,0.7)
+#define FONTCOLOR_GRAYWHITE                             RGB(255,255,255,0.4)
+
+#define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
